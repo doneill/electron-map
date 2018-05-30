@@ -27,8 +27,9 @@
       "esri/widgets/CoordinateConversion",
       "esri/widgets/Expand",
       "esri/widgets/BasemapGallery",
+      "esri/widgets/Search",
       "dojo/domReady!"
-    ], function(Map, MapView, CoordinateConversion, Expand, BasemapGallery) {
+    ], function(Map, MapView, CoordinateConversion, Expand, BasemapGallery, Search) {
 
       // Create a Map
       var map = new Map({
@@ -48,6 +49,15 @@
       });
 
       view.ui.add(ccWidget, "bottom-left");
+
+      var searchWidget = new Search({
+        view: view
+      });
+
+      // Add the search widget to the top right corner of the view
+        view.ui.add(searchWidget, {
+        position: "top-right"
+      });
 
       var basemapGallery = new BasemapGallery({
         view: view,
