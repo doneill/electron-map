@@ -14,6 +14,7 @@ brew install node
 ```bash
 # Install dependencies
 npm install
+```
 
 ## Run the App
 
