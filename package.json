@@ -1,0 +1,25 @@
+{
+  "name": "electron-map",
+  "version": "1.0.0",
+  "description": "electron map",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/doneill/electron-map",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "dop",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "electron": "^2.0.2"
+  },
+  "dependencies": {
+    "eslint": "^4.19.1"
+  }
+}
