@@ -4,6 +4,11 @@ electron map sandbox
 ## Requirements
 - [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com))
 
+```bash
+# mac homebrew
+brew install node
+```
+
 ## Install Dependencies
 
 ```bash
