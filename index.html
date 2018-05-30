@@ -24,13 +24,16 @@
     require([
       "esri/Map",
       "esri/views/MapView",
-      "esri/layers/OpenStreetMapLayer",
       "esri/widgets/CoordinateConversion",
+      "esri/widgets/Expand",
+      "esri/widgets/BasemapGallery",
       "dojo/domReady!"
-    ], function(Map, MapView, OpenStreetMapLayer, CoordinateConversion) {
+    ], function(Map, MapView, CoordinateConversion, Expand, BasemapGallery) {
 
       // Create a Map
-      var map = new Map();
+      var map = new Map({
+        basemap: "osm"
+      });
 
       // Make map view and bind it to the map
       var view = new MapView({
@@ -40,15 +43,32 @@
         zoom: 12,
       });
 
-      var osmLayer = new OpenStreetMapLayer();
-      map.add(osmLayer);
-
-    var ccWidget = new CoordinateConversion({
+      var ccWidget = new CoordinateConversion({
         view: view
-    });
+      });
 
       view.ui.add(ccWidget, "bottom-left");
+
+      var basemapGallery = new BasemapGallery({
+        view: view,
+        container: document.createElement("div")
+      });
+
+      // Create an Expand instance and set the content
+      // property to the DOM node of the basemap gallery widget
+      // Use an Esri icon font to represent the content inside
+      // of the Expand widget
+      var bgExpand = new Expand({
+        view: view,
+        content: basemapGallery.container,
+        expandIconClass: "esri-icon-basemap"
+      });
+
+      // Add the widget to the top-right corner of the view
+      view.ui.add(bgExpand, "top-right");
+
     });
+
   </script>
 </head>
 <body>
