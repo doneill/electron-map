@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+# package directory
+electron-map-darwin-x64/
+
+# vscode
+settings.json
