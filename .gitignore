@@ -64,4 +64,5 @@ typings/
 electron-map-darwin-x64/
 
 # vscode
+.vscode/
 settings.json
