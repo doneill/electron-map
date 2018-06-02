@@ -14,7 +14,7 @@
     "tutorial",
     "demo"
   ],
-  "author": "dop",
+  "author": "jdoneill",
   "license": "Apache-2.0",
   "devDependencies": {
     "electron": "^2.0.2"
