@@ -25,11 +25,13 @@
       "esri/Map",
       "esri/views/MapView",
       "esri/widgets/CoordinateConversion",
+      "esri/widgets/Locate",
+      "esri/widgets/Track",
       "esri/widgets/Expand",
       "esri/widgets/BasemapGallery",
       "esri/widgets/Search",
       "dojo/domReady!"
-    ], function(Map, MapView, CoordinateConversion, Expand, BasemapGallery, Search) {
+    ], function(Map, MapView, CoordinateConversion, Locate, Track, Expand, BasemapGallery, Search) {
 
       // Create a Map
       var map = new Map({
@@ -42,6 +44,28 @@
         map: map,
         center: [-122.337427, 47.611059],
         zoom: 12,
+      });
+
+        var locateBtn = new Locate({
+        view: view
+      });
+
+      // Add the locate widget to the top left corner of the view
+      view.ui.add(locateBtn, {
+        position: "top-left"
+      });
+
+            // Create an instance of the Track widget
+      // and add it to the view's UI
+      var track = new Track({
+        view: view
+      });
+      view.ui.add(track, "top-left");
+
+      // The sample will start tracking your location
+      // once the view becomes ready
+      view.when(function() {
+        track.start();
       });
 
       var ccWidget = new CoordinateConversion({
