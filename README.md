@@ -1,5 +1,5 @@
 # electron-map
-electron map sandbox
+electron map app
 
 ## Requirements
 - [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com))
