@@ -1,5 +1,5 @@
 # electron-map
-electron map app
+Cross platform desktop maps app built with Javascript/HTML/CSS using [Electron](https://electronjs.org/) framework.
 
 ## Requirements
 - [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com))
