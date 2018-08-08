@@ -1,5 +1,5 @@
 # electron-map
-electron map sandbox
+Cross platform maps app built with Javascript/HTML/CSS using [Electron](https://electronjs.org/) framework and [ArcGIS JavaScript API](https://developers.arcgis.com/javascript/).
 
 ## Requirements
 - [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com))
