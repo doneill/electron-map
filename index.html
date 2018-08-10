@@ -23,13 +23,13 @@
   <script>
     require([
       "esri/Map",
-      "esri/views/MapView",
+      "esri/views/SceneView",
       "esri/widgets/CoordinateConversion",
       "esri/widgets/Expand",
       "esri/widgets/BasemapGallery",
       "esri/widgets/Search",
       "dojo/domReady!"
-    ], function(Map, MapView, CoordinateConversion, Expand, BasemapGallery, Search) {
+    ], function(Map, SceneView, CoordinateConversion, Expand, BasemapGallery, Search) {
 
       // Create a Map
       var map = new Map({
@@ -37,7 +37,7 @@
       });
 
       // Make map view and bind it to the map
-      var view = new MapView({
+      var view = new SceneView({
         container: "viewDiv",
         map: map,
         center: [-122.337427, 47.611059],
