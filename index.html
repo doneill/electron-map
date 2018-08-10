@@ -55,8 +55,12 @@
       "esri/widgets/Expand",
       "esri/widgets/BasemapGallery",
       "esri/widgets/Search",
+      "esri/widgets/DirectLineMeasurement3D",
+      "esri/widgets/AreaMeasurement3D",
       "dojo/domReady!"
-    ], function(Map, SceneView, CoordinateConversion, Expand, BasemapGallery, Search) {
+    ], function(Map, SceneView, CoordinateConversion, Expand, BasemapGallery, Search, DirectLineMeasurement3D, AreaMeasurement3D) {
+
+      var activeWidget = null;
 
       // Create a Map
       var map = new Map({
