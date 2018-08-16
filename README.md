@@ -1,6 +1,12 @@
 # electron-map
 Cross platform maps app built with Javascript/HTML/CSS using [Electron](https://electronjs.org/) framework and [ArcGIS JavaScript API](https://developers.arcgis.com/javascript/).
 
+## Features
+- Change Basemaps
+- Place Search
+- Measure (3D)
+- Coordinate Conversion
+
 ## Requirements
 - [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com))
 
