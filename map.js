@@ -1,3 +1,4 @@
+// dependencies
 require([
     "esri/Map",
     "esri/views/SceneView",
@@ -12,12 +13,12 @@ require([
 
     var activeWidget = null;
 
-    // Create a Map
+    // Create an OSM Map
     var map = new Map({
       basemap: "osm"
     });
 
-    // Make map view and bind it to the map
+    // Create map view and bind it to the map
     var view = new SceneView({
       container: "viewDiv",
       map: map,
