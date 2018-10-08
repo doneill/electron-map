@@ -22,8 +22,8 @@ require([
     var view = new SceneView({
       container: "viewDiv",
       map: map,
-      center: [-122.337427, 47.611059],
-      zoom: 12,
+      center: [-98.579501, 39.828379],
+      zoom: 5,
     });
 
 
