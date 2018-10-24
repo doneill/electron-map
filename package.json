@@ -9,12 +9,10 @@
   "repository": "https://github.com/doneill/electron-map",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "ArGIS",
+    "Map"
   ],
-  "author": "dop",
+  "author": "jdoneill.com",
   "license": "Apache-2.0",
   "devDependencies": {
     "electron": "^2.0.12",
