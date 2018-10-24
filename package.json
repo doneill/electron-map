@@ -1,7 +1,7 @@
 {
   "name": "electron-map",
-  "version": "0.1.0",
-  "description": "electron map",
+  "version": "0.9.0",
+  "description": "Desktop Map App built with Electron and ArcGIS Javascript API",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
@@ -9,12 +9,10 @@
   "repository": "https://github.com/doneill/electron-map",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "ArGIS",
+    "Map"
   ],
-  "author": "dop",
+  "author": "jdoneill.com",
   "license": "Apache-2.0",
   "devDependencies": {
     "electron": "^2.0.12",
