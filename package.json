@@ -17,7 +17,8 @@
   "author": "dop",
   "license": "Apache-2.0",
   "devDependencies": {
-    "electron": "^2.0.12"
+    "electron": "^2.0.12",
+    "electron-builder": "^20.28.4"
   },
   "dependencies": {
     "eslint": "^4.19.1"
