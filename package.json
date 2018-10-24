@@ -1,7 +1,7 @@
 {
   "name": "electron-map",
-  "version": "0.1.0",
-  "description": "electron map",
+  "version": "0.9.0",
+  "description": "Desktop Map App built with Electron and ArcGIS Javascript API",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
