@@ -21,6 +21,8 @@ const {app, BrowserWindow} = require('electron')
       // when you should delete the corresponding element.
       win = null
     })
+
+    require('./menu/mainmenu')
   }
   
   // This method will be called when Electron has finished
