@@ -15,8 +15,8 @@
   "author": "jdoneill.com",
   "license": "Apache-2.0",
   "devDependencies": {
-    "electron": "^2.0.13",
-    "electron-builder": "^20.29.0"
+    "electron": "^2.0.14",
+    "electron-builder": "^20.36.2"
   },
   "dependencies": {
     "eslint": "^4.19.1"
