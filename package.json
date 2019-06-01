@@ -16,7 +16,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "electron": "^2.0.18",
-    "electron-builder": "^20.39.0"
+    "electron-builder": "^20.41.0"
   },
   "dependencies": {
     "eslint": "^4.19.1"
