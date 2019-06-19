@@ -26,39 +26,39 @@ require([
       zoom: 5,
     });
 
-
-    var ccWidget = new CoordinateConversion({
-      view: view
-    });
-
-    view.ui.add(ccWidget, "bottom-left");
-
-    var searchWidget = new Search({
-      view: view
-    });
-
-    // Add the search widget to the top right corner of the view
-      view.ui.add(searchWidget, {
-      position: "top-right"
-    });
-
     var basemapGallery = new BasemapGallery({
       view: view,
       container: document.createElement("div")
     });
 
-    // Create an Expand instance and set the content
-    // property to the DOM node of the basemap gallery widget
-    // Use an Esri icon font to represent the content inside
-    // of the Expand widget
+    // expand instance to show basemaps
     var bgExpand = new Expand({
       view: view,
       content: basemapGallery.container,
       expandIconClass: "esri-icon-basemap"
     });
 
-    // Add the widget to the top-right corner of the view
+    var ccWidget = new CoordinateConversion({
+      view: view
+    });
+
+    var searchWidget = new Search({
+      view: view
+    });
+
+    // add widgets
+
+    view.ui.add(ccWidget, "bottom-left");
+
+    view.ui.add(searchWidget, {
+      position: "top-right"
+    });
+
     view.ui.add(bgExpand, "top-right"); 
+
+    view.ui.add("measureBar", "bottom-right");
+
+    // event listeners
 
     document.getElementById("distanceButton").addEventListener("click",
       function() {
@@ -80,6 +80,7 @@ require([
         }
       });
 
+      // 
       function setActiveWidget(type) {
         switch (type) {
           case "distance":
@@ -117,8 +118,5 @@ require([
         selectedButton.classList.add("active");
       }
     }
-
-    // add the toolbar for the measurement widgets
-    view.ui.add("measureBar", "bottom-right");
 
   });
