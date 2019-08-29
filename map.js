@@ -15,7 +15,7 @@ require([
 
     // Create an OSM Map
     var map = new Map({
-      basemap: "osm"
+      basemap: "topo"
     });
 
     // Create map view and bind it to the map
