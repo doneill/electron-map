@@ -13,12 +13,10 @@ require([
 
     var activeWidget = null;
 
-    // Create an OSM Map
     var map = new Map({
-      basemap: "topo"
+      basemap: "osm"
     });
 
-    // Create map view and bind it to the map
     var view = new SceneView({
       container: "viewDiv",
       map: map,
@@ -45,8 +43,6 @@ require([
     var searchWidget = new Search({
       view: view
     });
-
-    // add widgets
 
     view.ui.add(ccWidget, "bottom-left");
 
@@ -80,7 +76,6 @@ require([
         }
       });
 
-      // 
       function setActiveWidget(type) {
         switch (type) {
           case "distance":
