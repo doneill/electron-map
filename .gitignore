@@ -67,5 +67,5 @@ dist/
 # ide
 .vscode/
 settings.json
-.sublime-project
-.sublime-workspace
+*.sublime-project
+*.sublime-workspace
