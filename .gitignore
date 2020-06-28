@@ -64,6 +64,8 @@ typings/
 electron-map-darwin-x64/
 dist/
 
-# vscode
+# ide
 .vscode/
 settings.json
+.sublime-project
+.sublime-workspace
