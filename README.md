@@ -1,5 +1,7 @@
-# electron-map
+# Electron Map
 Cross platform desktop Maps App built with Javascript/HTML/CSS using [Electron](https://electronjs.org/) framework and [ArcGIS JavaScript API](https://developers.arcgis.com/javascript/).
+
+![Electron map image](electron-map.png)
 
 ## Features
 - Change Basemaps
